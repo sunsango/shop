@@ -1,0 +1,92 @@
+  .newsww{
+            background:url("images/imgb/未命名-16.png");
+            background-size:100%;
+        }
+        .newsww button img{
+            width:10px;
+            height:15px;
+        }
+        .ww .bar .title{
+            color:white;
+            font-size: 20px;
+        }
+        .ww .bar .title.title-left{
+
+            text-align: center;
+            right: 31px;
+        }
+        .ww{
+            background: #f2f2f2;
+        }
+        .divre{
+            width:40%;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 10px;
+
+        }
+        .divre img{
+            width:30px;
+            height:30px;
+        }
+        .divre span{
+            font-size: 17px;
+            color: #639;
+            position: absolute;
+            top:9px;
+            right:5px;
+
+        }
+        .ww .item p{
+            white-space: normal;
+            padding-left: 100px;
+        }
+        .ww .item p.py6{
+            padding:0;
+        }
+        .ww .spane23{
+            float: right;
+        }
+        .ww .item h2{
+            white-space: normal;
+            padding-left: 100px;
+        }
+        .ww .spanew{
+            float: right;
+            color: #639;
+        }
+        .ww .list{
+            margin-top:16px;
+        }
+        .ww .yui{
+            width:20px;
+            height:20px;
+            margin-top:5px;
+        }
+        .ww .yuio{
+            float: right;
+            border:1px solid #666;
+            border-radius: 10px;
+            margin-right:15px;
+        }
+        .ww .imgr2{
+            width:350px;
+            height:257px
+        }
+        .ww .item{
+            padding: 10px;
+        }
+        .ww .ion3{
+            width:250px;
+            height:200px;
+        }
+        div.backdrop.visible.active{
+        	border-radius: 5px;
+        	width:100px;
+        	height: 80px;
+        	background-image: url("images/imgb/fh.png");
+        	background-size: 100px 80px;
+        	position: absolute;
+        	left:40%;
+        	top: 40%;
+        }

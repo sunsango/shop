@@ -1,0 +1,139 @@
+﻿<style>
+          *{
+			padding: 0;
+			margin: 0;
+		}
+		.topnl{
+			background-image: url(imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.nl .ion-chevron-left{
+			font-weight: normal;
+		}
+		.title{
+			color: #fff;
+		}
+		.nl .has-header{
+			width: 100%;
+			background-color: #F2F2F2;
+		}
+		.nl .has-header li{
+			float: left;
+			width: 20%;
+			height: 35px;
+		}
+		.nl .has-header li a{
+			width: 100%;
+			height: 21px;
+			line-height: 21px;
+			margin-top: 7px;
+			text-align:center;
+			display: inline-block;
+		    border-left: 1px solid #E0E0E0;
+		    text-decoration: none;
+		     color: #646464;	
+		}
+		.nl .aa{
+			border-bottom: 2px solid #663399;
+		}
+		.nl .topp span{
+			color: #ccc;
+			display: inline-block;
+		}
+		.nl .topp .ready{
+			width: 50px;
+			height: 20px;
+			display: inline-block;
+			float: right;
+			color:#F15A5A;
+			position: absolute;
+			right: 10px;
+			top:15px;
+		}
+		.nl .bann img{
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-right: 5px;
+		}
+		.nl .bann h2{
+			font-size: 14px;
+		}
+		.nl .bann h2 span{
+			color: #663399;
+			font-weight: bold;
+		}
+		.nl .bann h2 i{
+			/*padding-right:0px;*/
+			position: absolute;
+			right: 10px;
+			top: 82px;
+		}
+		.nl .last h2{
+			float: right;
+		}
+		.nl .last h2 span{
+			font-weight: bold;
+			color: #663399;
+		}
+		.nl .item button{
+			clear: both;
+			background-color: #663399;
+			float: right;
+			border-radius: 5px;
+			color: #fff;
+		}
+		.nl .list{
+			margin-top: 10px;
+		}
+</style>
+		<ion-header-bar class="topnl">
+			        <button class="button button-clear" style="color: #fff;" ui-sref="^.back">
+				         <i class="icon ion-chevron-left"></i>
+			        </button>
+		             <h2 class="title">今日订单</h2>  
+		</ion-header-bar>
+		<ion-content class="has-header nl">
+			<ion-list>
+		        	<ion-item class="item topp">
+		        		 <i class="icon ion-ios-clock-outline"></i>
+		        		 <span>2015-12-22 22:24</span>
+		        		 <sapn class="ready">待发货</span>
+		        	</ion-item>
+		        	<ion-item class="item bann">
+		        		<img src="imgf/come.png" />
+		        		<h2>撼森点歌机家庭用KTV套装<br/><br/><br/><br/>
+		        			<span>￥299</span>
+		        			<i>数量: ×1</i>
+		        		</h2>
+		        	</ion-item>
+		        	<ion-item class="item last">
+		        		<h2>共计:<span>￥314.00</span></h2>
+		        	</ion-item>
+		        	<ion-item class="item">
+		        		<button class="button">立即发货</button>
+		        	</ion-item>
+		        </ion-list>
+		         <ion-list class="list">
+		        	<ion-item class="item topp">
+		        		 <i class="icon ion-ios-clock-outline"></i>
+		        		 <span>2015-12-22 22:24</span>
+		        		 <sapn class="ready">待发货</span>
+		        	</ion-item>
+		        	<ion-item class="item bann">
+		        		<img src="imgf/family.png" />
+		        		<h2>撼森点歌机家庭用KTV套装<br/><br/><br/><br/>
+		        			<span>￥299</span>
+		        			<i>数量: ×1</i>
+		        		</h2>
+		        	</ion-item>
+		        	<ion-item class="item last">
+		        		<h2>共计:<span>￥314.00</span></h2>
+		        	</ion-item>
+		        	<ion-item class="item">
+		        		<button class="button">立即发货</button>
+		        	</ion-item>
+		        </ion-list>
+			
+		</ion-content>

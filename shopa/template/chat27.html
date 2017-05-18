@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			background-image: url(imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.ion-chevron-left{
+			font-weight: normal;
+		}
+		.title{
+			color: #fff;
+		}
+		.has-header{
+			background-color: #F2F2F2;
+		}
+		.time{
+			    margin-top: 10px;
+		         text-align: center;
+		}
+		.ff{
+			width: 90%;
+			margin: auto;
+		}
+		.ff img{
+			float: right;
+			width: 65px;
+			height: 65px;
+		}
+		.ff span{
+			width: 50px;
+			height: 40px;
+			line-height: 40px;
+			text-align:center;
+			display: inline-block;
+			background: url(imgf/cc.png);
+			background-size: 50px 40px;
+			float: right;
+			margin-top: 15px;
+			margin-right: 5px;
+		}
+		.ss{
+			clear: both;
+			width: 90%;
+			margin: auto;
+		}
+		.ss img{
+			float: left;
+			width: 55px;
+			height: 55px;
+		}
+		.ss span{
+			clear: both;
+			width: 200px;
+			height:40px;
+			line-height: 40px;
+			display: inline-block;
+			background: url(imgf/cd.png);
+			background-size: 200px 40px;
+			background-repeat: no-repeat;
+			margin-top: 15px;
+			margin-left:5px;
+		}
+		.button-left{
+			border-radius: 50%;
+			/*color: #fff;*/
+		}
+		.button-left i{
+			color: #646464;
+		}
+		.foot input{
+			width: 70%;
+			background-color: #F2F2F2;
+			margin: auto;
+		}
+		.button-royal{
+			float: right;
+		}
+	</style>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="top">
+			        <button class="button button-clear" style="color: #fff;">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">落月摇情</h2>  
+		</ion-header-bar>
+		<ion-content class="has-header">
+			 <p class="time">24-12 16:06</p>
+			 <p class="ff">
+			 	<img src="imgf/ca.png" />
+			 	<span>?</span>
+			 </p>
+			 <p class="ss">
+			 	<img src="imgf/cb.png" />
+			 	<span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好有神魔可以帮助您的?</span>
+			 </p>
+		</ion-content>
+        <ion-footer-bar class="foot">
+        	<button class="button  button-left">
+        		<i class="icon ion-android-add"></i>
+        	</button>
+        	<input type="text" />
+        	<button class="button button-royal">
+        	  发送
+        	</button>
+        </ion-footer-bar>
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function(){
+			
+		})
+	</script>
+</html>

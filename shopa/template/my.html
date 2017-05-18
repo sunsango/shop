@@ -1,0 +1,72 @@
+<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			background-image: url(imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.ion-chevron-left{
+			font-weight: normal;
+		}
+		.title{
+			color: #fff;
+		}
+		.has-header{
+			background-color: #F2F2F2;
+		}
+		.item span{
+			float: left;
+			margin-top: 7px;
+			margin-right:10px;
+			float: left;
+		}
+		.item input{
+			float: left;
+		}
+		.item img{
+			float: left;
+		}
+	</style>
+		<ion-header-bar class="top">
+			        <button class="button button-clear" style="color: #fff;" ui-sref="^.back">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">我的店址</h2>  
+		</ion-header-bar>
+		<ion-content class="has-header">
+			<icon-list>
+				<icon-item class="item">
+					<span>省&nbsp;&nbsp;市&nbsp;&nbsp;县</span>
+					<input type="text" value="河南省， 郑州市， 金水区" />
+				</icon-item>
+				<icon-item class="item">
+					 <span>详细地址</span>
+					 <input type="text" value="河南省郑州市金水区招银大厦2105" />
+				</icon-item>
+				<icon-item class="item">
+					<span>经&nbsp;&nbsp;纬&nbsp;&nbsp;度</span>
+					<input type="text" placeholder="点击获取经纬度" ui-sref="^.dtt"/>
+					<img src="imgf/dts.png" />
+				</icon-item>
+			</icon-list>
+		</ion-content>
+		<ion-footer-bar class="footer">
+			<!--<div class="row">
+			  <div class="col">陕西省</div>
+			  <div class="col">许昌市</div>
+			  <div class="col">二七区</div>
+			</div>
+			<div class="row">
+			  <div class="col">陕西省</div>
+			  <div class="col">许昌市</div>
+			  <div class="col">二七区</div>
+			</div>
+			<div class="row">
+			  <div class="col">陕西省</div>
+			  <div class="col">许昌市</div>
+			  <div class="col">二七区</div>
+			</div>-->
+		</ion-footer-bar>

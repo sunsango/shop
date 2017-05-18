@@ -1,0 +1,85 @@
+
+<ion-header-bar class=" newsww">
+    <button class="button button-clear"><img src="images/imgb/未命名-14.png" alt=""></button>
+    <h1 class="title">订单详情</h1>
+</ion-header-bar>
+<ion-content  class="ww">
+    <div class="divre">
+        <img src="images/imgb/未命名-48.png" alt="">
+        <span>等待卖家发货</span>
+    </div>
+    <ion-list>
+        <ion-item>
+            <p class="py6">收货人：小美 <span class="spane23">15938102596</span></p>
+            <p class="py6">收货地址：河南郑州市金水区花园路与金水路交叉口招银
+                大厦1808</p>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item class="item-thumbnail-left">
+            <img src="images/imgb/未命名-30.png" alt="" class="imgfr">
+            <h2 class="h21">撼森点歌机家庭用KTV高清触摸屏卡
+                拉ok点唱机一体机套装</h2>
+            <p>数量：X1</p>
+            <p>￥299</p>
+        </ion-item>
+        <ion-item>
+            <p >优惠券 <span class="spanew">-5元</span></p>
+        </ion-item>
+        <ion-item>
+            <p >买家留言：无</p>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <p >订单总价 <span class="spanew">￥294</span></p>
+        </ion-item>
+    </ion-list>
+    <ion-list class="song">
+    	<i style="padding-left: 10px;">选择配送方式</i>
+    	<ion-item style="border:none;margin-top: 10px;">
+    		<ion-radio ng-model="choice" ng-value="A" style="border:none">物流</ion-radio>
+			<ion-radio ng-model="choice" ng-value="B" style="border:none">快速</ion-radio>
+			<ion-radio ng-model="choice" ng-value="C" style="border:none">上门配送</ion-radio>
+    	</ion-item>
+    </ion-list>
+    <ion-list>
+    	<i style="padding-left: 10px;">填写物流公司</i>
+    	<ion-item class="item">
+    		<i style="float: left;margin-right: 5px;margin-top: 5px;">公司名称 :</i>
+    		<input type="text" placeholder="填写公司名称" />
+    	</ion-item>
+    	<ion-item class="item">
+    		<i style="float: left;margin-right: 5px;margin-top: 5px;">运单号:</i>
+            <input type="text" placeholder="填写运单号" />
+    	</ion-item>
+    </ion-list>
+    <ion-list class="uiy">
+        <ion-item>
+            <img src="images/imgb/未命名-4.png" alt="" class="yui">
+            <span class="dd">订单详情</span>
+            <hr>
+            <p class="py6">订单编号：15218040392654</p>
+            <p class="py6">支付方式：支付宝</p>
+            <p class="py6">下单时间：2015-05-02 17:06:25</p>
+            <p class="py6">付款时间：2015-05-02 17:06:25</p>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <button class="button yuio" style="background-color: #663399;color: #FFFEFE;" ng-click="action()">立即发货</button>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller('myCtrl', function($scope, $ionicBackdrop,$timeout) {
+	  $scope.action = function() {
+	    $ionicBackdrop.retain();
+	    $timeout(function() {
+	      $ionicBackdrop.release();
+	    }, 1000);
+	  };
+
+   });
+</script>

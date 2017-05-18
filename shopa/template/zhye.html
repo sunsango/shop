@@ -1,0 +1,110 @@
+<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.topp{
+			background-image: url(imgf/top.png);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		.topp .ion-chevron-left{
+			font-weight: normal;
+		}
+		.topp .title{
+			color: #fff;
+		}
+		.wwhas-header{
+			width: 100%;
+			background-color: #F2F2F2;
+		}
+		
+		.wwhas-header .tx{
+			margin-top: 10px;
+		}
+		.wwhas-header .tx img{
+			width: 20px;
+			height: 20px;
+			margin-right:5px;
+		}
+		.ll{
+			float: left;
+		}
+		.rr{
+			float: right;
+		}
+		.wwhas-header div.eight{
+			width: 100%;
+			text-align: center;
+		}
+		/*.wwhas-header .eight div{
+			width: 100%;
+			height: 100px;
+			/*text-align: center;*/
+		}*/
+		/*.wwhas-header .eight div img{
+			width: auto;
+			height: 100px;
+		}*/
+		ion-item.item div.eight div{
+			text-align: center;
+		}
+		ion-item.item div.eight div img{
+			width: 160px;
+			height: 100px;
+		}
+		.wwhas-header .eight button{
+			width: 100%;width: 90%;
+			background-color: #663399;
+			color: #fff;
+		}
+	</style>
+		<ion-header-bar class="topp">
+			        <button class="button button-clear" style="color: #fff;" ui-sref="^.back">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">账户余额</h2>  
+		</ion-header-bar>
+		<ion-content class="wwhas-header">
+		   <ion-list>
+		   	   <ion-item class="item">
+		   	   	    <div class="eight">
+			   	   	     <div>
+			   	   	     	<img src="imgf/888.png" />
+			   	   	     </div>
+			   	   	     <div>
+			   	   	     	<button class="button button-royal" ui-sref="^.money">提现</button>
+			   	   	     </div>
+		   	   	    </div>
+		   	   </ion-item>
+		   </ion-list>
+		   <ion-list>
+		   	   <ion-item class="item tx">
+		   	   	  <img src="imgf/text.png">提现明细
+		   	   </ion-item>
+		   	   <ion-item class="item">
+		   	   	 <p class="ll">提现-进行中<br/><span style="color: #ccc;">2015-12-20</span></p>
+		   	   	 <p class="rr" style="color:#F15A5A;font-weight: bold;margin-top: 5px;">-100</p>
+		   	   </ion-item>
+		   	   <ion-item class="item">
+		   	   	 <p class="ll">提现-进行中<br/><span style="color: #ccc;">2015-12-20</span></p>
+		   	   	 <p class="rr" style="color:#F15A5A;font-weight: bold;margin-top: 5px;">-100</p>
+		   	   </ion-item>
+		   	   <ion-item class="item">
+		   	   	 <p class="ll">提现-进行中<br/><span style="color: #ccc;">2015-12-20</span></p>
+		   	   	 <p class="rr" style="color:#F15A5A;font-weight: bold;margin-top: 5px;">-200</p>
+		   	   </ion-item>
+		   	   <ion-item class="item">
+		   	   	 <p class="ll">提现-完成<br/><span style="color: #ccc;">2015-12-20</span></p>
+		   	   	 <p class="rr" style="color:#F15A5A;font-weight: bold;margin-top: 5px;">-100</p>
+		   	   </ion-item>
+		   	   <ion-item class="item">
+		   	   	 <p class="ll">提现-完成<br/><span style="color: #ccc;">2015-12-20</span></p>
+		   	   	 <p class="rr" style="color:#F15A5A;font-weight: bold;margin-top: 5px;">-100</p>
+		   	   </ion-item>
+		   	   <ion-item class="item">
+		   	   	 <p class="ll">提现-完成<br/><span style="color: #ccc;">2015-12-20</span></p>
+		   	   	 <p class="rr" style="color:#F15A5A;font-weight: bold;margin-top: 5px;">-200</p>
+		   	   </ion-item>
+		   </ion-list>
+		</ion-content>

@@ -1,0 +1,89 @@
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.topy{
+			background-image: url(imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.topy .ion-chevron-left{
+			font-weight: normal;
+		}
+		.topy .title{
+			color: #fff;
+		}
+		.has-header{
+			background-color: #F2F2F2;
+		}
+		.has-header .row{
+			width: 95%;
+			height: 120px;
+			margin: 0 auto;
+			background-image: url(imgf/ya.png);
+			background-repeat: no-repeat;
+			background-size: 99% 120px;
+		}
+		.has-header .col img{
+			margin-left: 10%;
+			float: left;
+			width: 50px;
+			height:50px;
+		}
+		.has-header .col p{
+			clear: both;
+			margin-left:10%;
+		}
+		.has-header .col p button{
+			color: #ccc;
+		}
+		.add{
+			width: 90%;
+			height: 40px;
+			display: block;
+			margin:auto;
+			margin-top: 10px;
+		}
+		#btn{
+			width: 90%;
+			border: 2px dashed #ccc;
+			color:#ccc;
+			margin: 10px auto;
+		}
+	</style>
+		<ion-header-bar class="topy">
+			        <button class="button button-clear" style="color: #fff;" ui-sref="^.back">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">我的银行卡</h2>  
+		</ion-header-bar>
+		<ion-content class="has-header">
+			<div class="row">
+		 		<div class="col" style="margin-top: 10px;">
+		 			<img src="imgf/jh.png">
+		 			<span>光大银行<br/>储蓄卡</span>
+		 			<p>
+		 			     <button class="button button-light button-small">[默认]</button>
+		 			</p>
+		 		</div>
+		 		<div class="col" style="margin-top:70px;text-align: center;">
+		 			<h5>**** **** **** 2177</h5>
+		 		</div>
+		 	</div>
+		 	<div class="row">
+		 		<div class="col" style="margin-top:10px;">
+		 			<img src="imgf/gs.png">
+		 			<span>工商银行<br/>储蓄卡</span>
+		 			<p>
+		 			     <button class="button button-light button-small">[设为默认银行卡]</button>
+		 			</p>
+		 		</div>
+		 		<div class="col" style="margin-top:70px;text-align: center;">
+		 			<h5>**** **** **** 2177</h5>
+		 		</div>
+		 	</div>
+		 	 <!--<img src="imgf/tj.png" class="add"/>-->
+		 	<button class="button button-clear button-block button-clear" id="btn">添加银行卡</button>
+		</ion-content>

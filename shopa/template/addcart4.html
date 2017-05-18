@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			background-image: url(imgf/top.png);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		.ion-chevron-left{
+			font-weight: normal;
+		}
+		.title{
+			color: #fff;
+		}
+		.has-header{
+			width: 100%;
+			background-color: #F2F2F2;
+		}
+		.item img{
+			width: 40px;
+			height: 40px;
+			float: left;
+			margin-right: 10px;
+		}
+		.item p{
+			float: left;
+		}
+		.item span{
+			color: #ccc;
+		}
+		.item i{
+			display: inline-block;
+			float: right;
+		}
+	</style>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="top">
+			        <button class="button button-clear" style="color: #fff;">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">选择银行卡</h2>  
+		              <button class="button button-clear" style="color: #fff;">
+				         <i class="icon"">添加</i>
+			        </button>
+		</ion-header-bar>
+		<ion-content class="has-header">
+		   <ion-list>
+		   	  <ion-item class="item">
+		   	  	<img src="imgf/gs.png">
+		   	  	<p>中国工商银行<br/><span>尾号7265储蓄卡</span></p>
+		   	  	<i class="icon ion-ios-circle-outline"></i>
+		   	  </ion-item>
+		   	  <ion-item class="item">
+		   	  	<img src="imgf/gd.png">
+		   	  	<p>中国光大银行<br/><span>尾号2177储蓄卡</span></p>
+		   	  	<i class="icon ion-ios-circle-outline"></i>
+		   	  </ion-item>
+		   	  <ion-item class="item">
+		   	  	<img src="imgf/jh.png">
+		   	  	<p>中国建设银行<br/><span>尾号8660储蓄卡</span></p>
+		   	  	<i class="icon ion-ios-circle-outline"></i>
+		   	  </ion-item>
+		   </ion-list>
+		</ion-content>
+	</body>
+	<script>
+	     var app=angular.module("myApp",["ionic"]);
+	     app.controller("myCtrl",function($scope){
+	     });
+	</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			background-image: url(imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.ion-chevron-left{
+			font-weight: normal;
+		}
+		.title{
+			color: #fff;
+		}
+		.has-header{
+			background-color: #F2F2F2;
+		}
+		.item span{
+			float: left;
+			margin-top: 7px;
+			margin-right:10px;
+		}
+		.has-header .button-block{
+			background-color:#663399;
+			color: #fff;
+			/*margin-top: 40px;*/
+			width: 90%;
+			margin: 40px auto;
+		}
+		.adds{
+			width:150px;
+			height: 80px;
+			margin: 0 auto;
+			position: absolute;
+			left: 30%;
+			bottom: 0px;
+		}
+	</style>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="top">
+			        <button class="button button-clear" style="color: #fff;">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">添加银行卡</h2>  
+		</ion-header-bar>
+		<ion-content class="has-header">
+			<icon-list>
+				<icon-item class="item">
+					<span>持卡人</span><input type="text" placeholder="请填写持卡人本人姓名"/>
+				</icon-item>
+				<icon-item class="item">
+					<span>卡类型</span><input type="text" placeholder="请填写银行卡类型"/>
+				</icon-item>
+				<icon-item class="item">
+					<span>卡&nbsp;&nbsp;&nbsp;号</span><input type="text" placeholder="银行卡号"/>
+				</icon-item>
+				<icon-item class="item">
+					<span>开户行</span><input type="text" placeholder="请填写开户银行"/>
+				</icon-item>
+			</icon-list>
+			<button class="button button-block">提交</button>
+			<img src="imgf/adds.png" class="adds"/>
+		</ion-content>
+	</body>
+	<script>
+	     var app=angular.module("myApp",["ionic"]);
+	     app.controller("myCtrl",function($scope){
+	     });
+	</script>
+</html>

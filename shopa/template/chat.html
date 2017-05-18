@@ -1,0 +1,82 @@
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			background-image: url(../imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.has-header{
+			background-color: #F2F2F2;
+		}
+		.item-thumbnail-left h2{
+			margin-top: 15px;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #646464;
+		}
+		.item-thumbnail-left h2 span{
+			font-weight: normal;
+			margin-top: -18px;
+			color: #646464;
+			float: right;
+		}
+		.item-thumbnail-left p{
+			font-size: 13px;
+		}
+		.tabs-icon-top{
+			background-color: #F2F2F2;
+		}
+		
+	</style>
+		<ion-header-bar class="top">
+			        <button class="button button-clear" style="color: #fff;">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h1 class="title">消息</h1>  
+		</ion-header-bar>
+		<ion-content class="has-header">
+			<ion-list>
+				    <ion-item class="item-thumbnail-left">
+				        <img src="imgf/imga.png">
+				        <h2>落月摇情 <span >2016-02-22</span></h2>
+				        <p style="font-size: 13px;">您好,有神魔可以帮助您的吗?</p>
+				    </ion-item>
+				    <ion-item class="item-thumbnail-left">
+				        <img src="imgf/imgb.png">
+				        <h2>周大千<span >2016-02-21</span></h2>
+				        <p>那个单子也还不错,要不您过来看看?</p>
+				    </ion-item>
+				    <ion-item class="item-thumbnail-left">
+				        <img src="imgf/imgc.png">
+				        <h2>歌歌歌歌歌手<span >2016-02-20</span></h2>
+				        <p>好的,我会尽快安排发货的</p>
+				    </ion-item>
+				    <ion-item class="item-thumbnail-left">
+				        <img src="imgf/imgd.png">
+				        <h2>约K联系13535545678<span>2016-02-19</span></h2>
+				        <p>好的</p>
+				    </ion-item>
+				    <ion-item class="item-thumbnail-left">
+				        <img src="imgf/imgf.png">
+				        <h2>管她有多美<span >2016-02-18</span></h2>
+				        <p>你说的这两种都有,价格都是最低的</p>
+				    </ion-item>
+		</ion-content>
+		<ion-tabs class="tabs-icon-top">
+
+			  <ion-tab title="首页" icon-on="ion-home" icon-off="ion-home">
+			     <!-- <ion-nav-view></ion-nav-view>-->
+			  </ion-tab>
+			
+			  <ion-tab title="消息" icon-on="ion-chatbox" icon-off="ion-chatbox">
+			  </ion-tab>
+			
+			  <ion-tab title="购物车" icon-on="ion-ios-cart" icon-off="ion-ios-cart">
+			    
+			  </ion-tab>
+
+		</ion-tabs>

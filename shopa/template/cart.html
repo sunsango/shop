@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.top{
+			background-image: url(imgf/top.png);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		.ion-chevron-left{
+			font-weight: normal;
+		}
+		.title{
+			color: #fff;
+		}
+		.has-header{
+			width: 100%;
+			background-color: #F2F2F2;
+		}
+		.has-header .img{
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			margin-top: 100px;
+		}
+		.has-header .img img{
+			width: 160px;
+			height: 100px;
+		}
+	</style>
+	<body ng-controller="myCtrl">
+		<ion-header-bar class="top">
+			        <button class="button button-clear" style="color: #fff;">
+				         <i class="icon ion-chevron-left""></i>
+			        </button>
+		             <h2 class="title">我的银行卡</h2>  
+		</ion-header-bar>
+		<ion-content class="has-header">
+		   <div class="img">
+		   	   <img src="imgf/cart.png">
+		   </div>
+		</ion-content>
+	</body>
+	<script>
+	     var app=angular.module("myApp",["ionic"]);
+	     app.controller("myCtrl",function($scope){
+	     });
+	</script>
+</html>
